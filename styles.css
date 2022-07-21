@@ -1,0 +1,36 @@
+#media-titles {
+    border: 1px solid blue;
+    width: 25%;
+    float: left;
+    font-size: 16px;
+  }
+  
+#star-wars-description {
+    border: 1px solid red;
+    margin-left: 25%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.franchise-1 {
+    font-size: 50px;
+    letter-spacing: 8px;
+    margin-bottom: 0%;
+    color: yellow;
+}
+
+.franchise-2 {
+    font-size: 50px;
+    letter-spacing: 8px;
+    margin-top: 0%;
+}
+
+h2{
+    margin-left: 1%;
+}
+
+h3 {
+    margin-left: 2%;
+}
