@@ -13,34 +13,33 @@ h1 {
     margin-left: 0;
 }
 
-.franchise-text {
+#franchise-text {
     width: 100%;
     height: 100%;            
     position: absolute;
     bottom: 10px;
 }
 
-.franchise-1, .franchise-2 {
+#franchise-1 {
+    margin-bottom: 0%;
+}
+
+#franchise-2 {
+    margin-top: 0%;
+}
+
+.star-wars {
     font-size: 50px;
     letter-spacing: 2px;
     text-shadow: -1px -1px 0 yellow, 1px -1px 0 yellow, -1px 1px 0 yellow, 1px 1px 0 yellow;
 }
 
-.franchise-1 {
-    margin-bottom: 0%;
-}
-
-.franchise-2 {
-    margin-top: 0%;
-}
-
-
-.light-speed {
+#light-speed {
     z-index: 9;
     width: 100%;
 }
 
-.main-title-gif {
+#main-title-gif {
     width: 100%;
     height: 200px;
 }
@@ -61,28 +60,41 @@ h2 {
     font-size: 30px;
 }
 
-h2.highlight:hover {
-    color: azure;
-    font-size: 35px;
-}
-
 h3 {
     margin: 10px;
     text-decoration: underline;
 }
 
-#media-titles {
+/* everything above is responsible for styling headings: h2 and h3 */
+
+#left-content {
     border: 1px solid blue;
     width: 27%;
     float: left;
     font-size: 16px;
+    display: block;
+    width: 27%;
+    overflow-y: auto;
+    height: 100%;
 }
-  
+
+a {
+    color: yellow;
+}
+
+:hover {
+    color: red;
+}
+
+/* Everything above is responsible for the left sided content */
+
 #star-wars-description {
     border: 1px solid red;
     margin-left: 27%;
 }
 
-a {
-    color: yellow;
+.description-box {
+    border: 1px solid red;
+    height: 300px;
+    width: 100%;
 }
