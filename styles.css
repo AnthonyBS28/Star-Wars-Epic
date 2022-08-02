@@ -144,6 +144,6 @@ li {
 
 /* everything above messes with flex, borders, and movie poster sizes */
 
-@media screen and (max-width: 767px) {
-    
+@media (max-width: 1000px) {
+
 }
