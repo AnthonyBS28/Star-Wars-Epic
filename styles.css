@@ -139,7 +139,7 @@ img {
 }
 
 li {
-    font-size: 25@media querry fit in px;
+    font-size: 25
 }
 
 /* everything above messes with flex, borders, and movie poster sizes */
