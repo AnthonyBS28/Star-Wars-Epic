@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    margin: 0;
 }
 
 h1 {
@@ -65,17 +66,36 @@ h3 {
     text-decoration: underline;
 }
 
-/* everything above is responsible for styling headings: h2 and h3 */
+h4 {
+    font-weight: bold;
+    font-size: 35px;
+    text-decoration: underline;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+p {
+    font-weight: bold;
+    font-size: 30px;
+    color: yellow;
+}
+
+#author {
+    color: pink;
+    font-size: 31px;
+}
+
+/* everything above is responsible for styling headings: h2, h3, and h4 */
 
 #left-content {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 27%;
     float: left;
     font-size: 16px;
     display: block;
-    width: 27%;
     overflow-y: auto;
     height: 100%;
+    position: fixed;
 }
 
 a {
@@ -89,14 +109,15 @@ a {
 /* Everything above is responsible for the left sided content */
 
 #star-wars-description {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-left: 27%;
 }
 
 .description-box {
-    border: 1px solid red;
-    height: 483px;
+    /* border: 1px solid pink; */
+    display: flex;
     width: 100%;
+    justify-content: space-between;
 }
 
 img {
@@ -106,18 +127,22 @@ img {
 
 .poster {
     width: 350px;
-    height: 100%;
 }
 
-/* everything above messes with borders and movie poster sizes */
-
-.title {
-    margin-inline-end: 50%;
-    margin-inline-start: auto;
-    display: block;
+.title{
+    width: 65%;
 }
 
-.poster-left-align {
-    /* margin-left: 50%; */
-    z-index: 3;
+#SOURCES {
+    text-align: center;
+    border-top: 5px solid red;
+}
+
+li {
+    font-size: 25@media querry fit in px;
+}
+
+/* everything above messes with flex, borders, and movie poster sizes */
+
+@media only screen and (max-width : 320px) {
 }
