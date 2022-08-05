@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    /* margin: 0; */
+    margin: 0;
 }
 
 h1 {
@@ -10,22 +10,39 @@ h1 {
 #main-title {
     width: 100%;
     height: 200px;
-    border: 1px solid pink;
+    position: relative;
+    margin-left: 0;
 }
 
 #franchise-text {
     width: 100%;
-    height: 100%;
+    height: 100%;            
+    position: absolute;
+    bottom: 10px;
+}
+
+#franchise-1 {
+    margin-bottom: 0%;
+}
+
+#franchise-2 {
+    margin-top: 0%;
 }
 
 .star-wars {
     font-size: 50px;
     letter-spacing: 2px;
     text-shadow: -1px -1px 0 yellow, 1px -1px 0 yellow, -1px 1px 0 yellow, 1px 1px 0 yellow;
-    z-index: 2;
+}
+
+#light-speed {
+    z-index: 9;
+    width: 100;
 }
 
 #main-title-gif {
+    width: 100%;
+    height: 200px;
 }
 
 /* Everything above is responsible to the title styling and gif */
@@ -81,17 +98,6 @@ p {
     position: fixed;
 }
 
-#franchise-text {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 10px;
-}
-
-#franchise-1 {
-    
-}
-
 a {
     color: yellow;
 }
@@ -102,12 +108,9 @@ a {
 
 /* Everything above is responsible for the left sided content */
 
-#right-content {
+#star-wars-description {
     /* border: 1px solid red; */
-    /* margin-left: 27%; */
-    float: right;
-    width: 72.8%;
-    display: block;
+    margin-left: 27%;
 }
 
 .description-box {
@@ -115,8 +118,6 @@ a {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    border-top: 1px solid red;
-    border-bottom: 1px solid red;
 }
 
 img {
@@ -134,39 +135,23 @@ img {
 
 #SOURCES {
     text-align: center;
+    border-top: 5px solid red;
 }
 
 li {
-    font-size: 25px;
-}
-
-#introduction-box {
-    position: center;
+    font-size: 25
 }
 
 /* everything above messes with flex, borders, and movie poster sizes */
 
-@media only screen and (max-width: 1500px) {
-    #left-content {
-        /* border: 1px solid blue; */
-        height: 35%;
-        width: 100%;
-        float: top;
-        display: block;
-        overflow-y: auto;
-        position: fixed;
-    }
+@media only screen and (max-width: 1000px) {
 
-    #right-content {
-        /* border: 1px solid red; */
-        /* margin-left: 27%; */
-        float: bottom;
-        height: 45%;
-        width: 100%;
-        display: block;
-    }
+}
 
-    .star-wars {
-        font-size: 60px;
-    }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1366px) {
+
 }
