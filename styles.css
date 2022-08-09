@@ -167,16 +167,16 @@ h3#complete {
 
 /* everything above messes with flex, borders, and movie poster sizes */
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 800px) {
     #left-content {
-        width: 390px;
+        width: 100%;
         float: top;
         display: block;
         height: 32%;
     }
 
     #right-content {
-        width: 390px;
+        width: 100%;
         float: bottom;
         margin-top: 267px;
         height: 50%;
@@ -184,7 +184,7 @@ h3#complete {
     }
 
     .description-box {
-        width: 390px;
+        width: 100%;
         height: 250px;
     }
 
