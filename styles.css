@@ -36,7 +36,6 @@ h1 {
 }
 
 #light-speed {
-    z-index: 9;
     width: 100;
 }
 
@@ -108,9 +107,10 @@ a {
 
 /* Everything above is responsible for the left sided content */
 
-#star-wars-description {
+#right-content {
     /* border: 1px solid red; */
-    margin-left: 27%;
+    float: right;
+    width: 73%;
 }
 
 .description-box {
@@ -118,6 +118,8 @@ a {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
 }
 
 img {
@@ -135,23 +137,96 @@ img {
 
 #SOURCES {
     text-align: center;
-    border-top: 5px solid red;
+    border-top: 1px solid red;
 }
 
-li {
-    font-size: 25
+ul {
+    width: 100%;
+    display: block;
+    margin: 0%;
+    padding: 0%;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+.resource-left .resource-right {
+    margin: 0%;
+}
+
+.resource-left {
+    width: 50%;
+}
+
+.resource-right {
+    width: 50%;
+}
+
+h3#complete {
+    text-decoration: none;
 }
 
 /* everything above messes with flex, borders, and movie poster sizes */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 390px) {
+    #left-content {
+        width: 390px;
+        float: top;
+        display: block;
+        height: 32%;
+    }
 
-}
+    #right-content {
+        width: 390px;
+        float: bottom;
+        margin-top: 267px;
+        height: 50%;
+        display: block;
+    }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .description-box {
+        width: 390px;
+        height: 250px;
+    }
 
-}
+    h2 {
+        font-size: 30px;
+    }
 
-@media only screen and (min-width: 768px) and (max-width: 1366px) {
+    #films {
+        background-color: black;
+    }
 
+    #franchise-1 {
+        font-size: 69px;
+        margin-top: 9%;
+    }
+
+    #franchise-2 {
+        font-size: 69px;
+    }
+
+    .poster {
+        width: 40%;
+        height: 100%;
+    }
+
+    p {
+        font-size: 11px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    a {
+        font-size: 20px;
+    }
+
+    .r-links {
+        font-size: 10px;
+    }
+
+    ul {
+        font-size: 21px;
+    }
 }
